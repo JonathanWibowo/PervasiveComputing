@@ -26,4 +26,4 @@ while True:
     print datetimeWrite
     break
 	
-#https://wingoodharry.wordpress.com/2014/12/24/raspberry-pi-temperature-sensor-web-server-part-1-intro-sensor-setup-and-python-script/
+#Source : https://wingoodharry.wordpress.com/2014/12/24/raspberry-pi-temperature-sensor-web-server-part-1-intro-sensor-setup-and-python-script/
