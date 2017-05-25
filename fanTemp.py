@@ -26,4 +26,3 @@ while True:
     else:
         GPIO.output(fan, GPIO.LOW)
         print ' Fan off'
-
