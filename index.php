@@ -43,38 +43,40 @@ if(!isset($_GET['blink1']) || !isset($_GET['blink2']))
 //control light on & light off
 if(isset($_GET['off1']))
 {
-	echo "LED is off";
+	echo "<center>LED is off</center>";
 	shell_exec("sudo python /var/www/html/light_off.py");
 }
 else if(isset($_GET['on1']))
 {
-	echo "LED is on";
+	echo "<center>LED is on</center>";
 	shell_exec("sudo python /var/www/html/light_on.py");
 }
 else if(isset($_GET['off2']))
 {
-	echo "LED is off";
+	echo "<center>LED is off</center>";
 	shell_exec("sudo python /var/www/html/light_off2.py");
 }
 else if(isset($_GET['on2']))
 {
-	echo "LED is on";
+	echo "<center>LED is on</center>";
 	shell_exec("sudo python /var/www/html/light_on2.py");
 }
 //control blink
 else if(isset($_GET['blink1']))
 {
+	echo "<center>LED is blinking</center>";
 	shell_exec("sudo python /var/www/html/blink.py");
 }
 else if(isset($_GET['blink2']))
 {
+	echo "<center>LED is blinking</center>";
 	shell_exec("sudo python /var/www/html/blink2.py");
 }
 //control temperature
 else if(isset($_GET['temp']))
 {
     $temperature = shell_exec("sudo python /var/www/html/temperature.py");
-	echo $temperature;
+	echo "<center>$temperature</center>";
 }
 ?>
 </body>
