@@ -43,22 +43,22 @@ if(!isset($_GET['blink1']) || !isset($_GET['blink2']))
 //control light on & light off
 if(isset($_GET['off1']))
 {
-	echo "<center>LED is off</center>";
+	echo "<center>LED 1 is off</center>";
 	shell_exec("sudo python /var/www/html/light_off.py");
 }
 else if(isset($_GET['on1']))
 {
-	echo "<center>LED is on</center>";
+	echo "<center>LED 1 is on</center>";
 	shell_exec("sudo python /var/www/html/light_on.py");
 }
 else if(isset($_GET['off2']))
 {
-	echo "<center>LED is off</center>";
+	echo "<center>LED 2 is off</center>";
 	shell_exec("sudo python /var/www/html/light_off2.py");
 }
 else if(isset($_GET['on2']))
 {
-	echo "<center>LED is on</center>";
+	echo "<center>LED 2 is on</center>";
 	shell_exec("sudo python /var/www/html/light_on2.py");
 }
 //control blink
